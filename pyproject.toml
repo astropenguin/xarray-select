@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "xarray-select"
+version = "0.1.0"
+description = "xarray extension for data selection"
+authors = ["Akio Taniguchi <taniguchi@a.phys.nagoya-u.ac.jp>"]
+keywords = ["xarray", "xarray-accessor", "xarray-extension"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/astropenguin/xarray-select/"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.13"
+xarray = ">=2022.3, <2024.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11"
+ipython = "^8.18"
+pyright = "^1.1"
+pytest = "^7.4"
+
+[tool.pyright]
+typeCheckingMode = "strict"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
